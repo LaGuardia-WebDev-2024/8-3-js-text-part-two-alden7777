@@ -4,8 +4,14 @@ void setup(){
 }
 
 //🟢Draw Function - Runs on Repeat
+
+
 draw = function(){  
+var label= mouseX +" , "+ mouseY;
+
   background(255, 255, 255);
-  fill(255, 0, 255);
-  ellipse(36, 45, 12, 12); 
+  fill(mouseX, 0, mouseY);
+  ellipse(mouseX, mouseY, 30, 30); 
+text(label, mouseX+50, mouseY);
+
 };
